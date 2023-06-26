@@ -1,14 +1,15 @@
 import React from 'react'
 import './about.css';
-import ME from '../../assets/me.png'
+import ME from '../../assets/me-about.png'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
+
 const About = () => {
   return (
     <section id='about'>
-      <h5>Conhecer mais</h5>
+      <h5>Venha me conhecer</h5>
       <h2>Sobre mim</h2>
 
 
@@ -20,28 +21,32 @@ const About = () => {
           </div>
 
           <div className='about__content'>
-              <div className='about_cards'>
+              <div className='about__cards'>
                 <article className='about__card'>
-                  <FaAward className='about_icon'/>
+                  <FaAward className='about__icon'/>
                   <h5>Experiência</h5>
-                  <small>9+ Anos de atuação</small>
+                  <small>10+ Anos de atuação</small>
                 </article>
 
                 <article className='about__card'>
-                  <FiUsers className='about_icon'/>
+                  <FiUsers className='about__icon'/>
                   <h5>Clientes</h5>
                   <small>Diversos Clientes</small>
                 </article>
 
                 <article className='about__card'>
-                  <VscFolderLibrary className='about_icon'/>
+                  <VscFolderLibrary className='about__icon'/>
                   <h5>Projetos</h5>
-                  <small>Diversos projetos completos</small>
+                  <small>Muitos projetos completos</small>
                 </article>
               </div>
 
               <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Sou Lucas, um desenvolvedor autodidata de 32 anos, atualmente morando no Brasil.
+              Sou formado em Análise e Desenvolvimento de Sistemas e Pós Graduado em Gestão Ágil e Desenvolvimento de Software. 
+              Trabalho há mais de 10 anos como programador, passando por diversas pilhas como HTML, CSS, JavaScript, Bootstrap, Angular, Java, MySQL, Spring Boot e outros Front-End e tecnologias de Back-end.
+
+              Eu sempre quero aprender mais e fazer mais. Também acredito firmemente que nunca devemos nos acomodar. Sou trabalhador, super curioso, apaixonado, comprometido e aprendo rápido!
               </p>
 
               <a href='#contact' className='btn btn-primary'>Entrar em contato</a>
