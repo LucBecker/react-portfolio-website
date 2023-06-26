@@ -61,6 +61,7 @@ h1{
 
 section{
     margin-top: 8rem;
+    height: 100vh;
 }
 
 section > h2, section > h5{
@@ -111,6 +112,7 @@ a:hover{
 img{
     display: block;
     width: 100%;
+    justify-content: center;
     object-fit: cover;
 }
 
