@@ -44,7 +44,8 @@ const About = () => {
               <p>
               Sou Lucas, um desenvolvedor autodidata de 32 anos, atualmente morando no Brasil.
               Sou formado em Análise e Desenvolvimento de Sistemas e Pós Graduado em Gestão Ágil e Desenvolvimento de Software. 
-              Trabalho há mais de 10 anos como programador, passando por diversas pilhas como HTML, CSS, JavaScript, Bootstrap, Angular, Java, MySQL, Spring Boot e outros Front-End e tecnologias de Back-end.
+              Trabalho há mais de 10 anos como programador, passando por diversas Stacks como HTML, CSS, JavaScript, Bootstrap, Angular, Java, MySQL, Spring Boot e outros Front-End e tecnologias de Back-end, além de desenvolvimento
+              com Cloud como AWS e Azure, Keycloak e Serverless.
 
               Eu sempre quero aprender mais e fazer mais. Também acredito firmemente que nunca devemos nos acomodar. Sou trabalhador, super curioso, apaixonado, comprometido e aprendo rápido!
               </p>
