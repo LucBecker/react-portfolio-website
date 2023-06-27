@@ -6,6 +6,96 @@ import IMG3 from '../../assets/portfolio3.png'
 import IMG4 from '../../assets/portfolio4.png'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.png'
+import IMG7 from '../../assets/portfolio7.png'
+import IMG8 from '../../assets/portfolio8.png'
+
+const data = [
+  {
+    id: 1, 
+    image: IMG1,
+    title: 'Serverless Node AWS Lambda',
+    github: 'https://github.com/LucBecker/serverless-node-aws-lambda',
+    demo: '',
+  },
+  {
+    id: 2, 
+    image: IMG3,
+    title: 'Sistema de ordens de serviço (REST APIs)',
+    github: 'https://github.com/LucBecker/order-service-api',
+    demo: '',
+  },
+  {
+    id: 3, 
+    image: IMG2,
+    title: 'Ordens de Serviço',
+    github: 'https://github.com/LucBecker/order-service-front',
+    demo:   'https://lucbecker.github.io/',
+  },
+  {
+    id: 4, 
+    image: IMG1,
+    title: 'Agenda Live',
+    github: 'https://github.com/LucBecker/agendalive-front',
+    demo: '',
+  },
+  {
+    id: 5, 
+    image: IMG3,
+    title: 'Testes com JUnit 5 Mockito e Spring Boot (REST APIs)',
+    github: 'https://github.com/LucBecker/api-resource',
+    demo: '',
+  },
+  {
+    id: 6, 
+    image: IMG4,
+    title: 'Bookstore Frontend',
+    github: 'https://github.com/LucBecker/bookstore-frontend',
+    demo: 'https://lucbecker.github.io/bookstore-frontend/',
+  },
+  {
+    id: 7, 
+    image: IMG3,
+    title: 'Bookstore Backend',
+    github: 'https://github.com/LucBecker/bookstore-api',
+    demo: '',
+  },
+  {
+    id: 8, 
+    image: IMG5,
+    title: 'Help-desk Frontend',
+    github: 'https://github.com/LucBecker/helpdesk-front',
+    demo: 'https://helpdesk-front-becker.vercel.app/login',
+  },
+  {
+    id: 9, 
+    image: IMG3,
+    title: 'Help-desk Backend',
+    github: 'https://github.com/LucBecker/helpdesk-back',
+    demo: 'https://tindog-lake.vercel.app/',
+  },
+  {
+    id: 10, 
+    image: IMG7,
+    title: 'Integração da API Spring Boot + OpenAI ChatGPT',
+    github: 'https://github.com/LucBecker/springboot-chatgpt',
+    demo: '',
+  },
+  {
+    id: 11, 
+    image: IMG6,
+    title: 'Spring Boot e React',
+    github: 'https://github.com/LucBecker/spring-boot-and-react',
+    demo: '',
+  },
+  {
+    id: 12, 
+    image: IMG8,
+    title: 'Backstage Demo App',
+    github: 'https://github.com/LucBecker/backstage-demo-app',
+    demo: '',
+  }
+] 
+
 
 const Portfolio = () => {
   return (
@@ -14,71 +104,23 @@ const Portfolio = () => {
       <h2>Portfólio </h2>
 
       <div className='container portfolio__container'>
-          <article className='portfolio__item'>
+          {
+            data.map(({id, image, title, github, demo}) =>{
+              return(
+            <article key={id} className='portfolio__item'>
             <div className='portfolio__item-image'>
-            <img src={IMG1}></img>
+            <img src={image} alt={title}></img>
             </div>
-                <h3>Google Clone</h3>
+                <h3>{title}</h3>
                 <div className='portfolio__item-cta'>
-                <a href='https://github.com/Mardoqueu/google-v1' className='btn' target='_blank'>Github</a>
-                <a href='https://google-v1-teal.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
+                <a href={github} className='btn' target='_blank'>Github</a>
+                <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
                 </div>
           </article>
+              )
+            })
+          }
 
-          <article className='portfolio__item'>
-            <div className='portfolio__item-image'>
-            <img src={IMG2}></img>
-            </div>
-                <h3>Movie App</h3>
-                <div className='portfolio__item-cta'>
-                <a href='https://github.com/Mardoqueu/movie-app-v1' className='btn' target='_blank'>Github</a>
-                <a href='https://movie-app-v1-tawny.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
-
-          <article className='portfolio__item'>
-            <div className='portfolio__item-image'>
-            <img src={IMG3}></img>
-            </div>
-                <h3>Instagram Clone</h3>
-                <div className='portfolio__item-cta'>
-                <a href='https://github.com/Mardoqueu/insta-v1' className='btn' target='_blank'>Github</a>
-                <a href='https://insta-vercel.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
-
-          <article className='portfolio__item'>
-            <div className='portfolio__item-image'>
-            <img src={IMG4}></img>
-            </div>
-                <h3>Twitter Clone</h3>
-                <div className='portfolio__item-cta'>
-                <a href='https://github.com/Mardoqueu/twitter' className='btn' target='_blank'>Github</a>
-                <a href='https://twitter-peach.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
-
-          <article className='portfolio__item'>
-            <div className='portfolio__item-image'>
-            <img src={IMG5}></img>
-            </div>
-                <h3>Helpdesk</h3>
-                <div className='portfolio__item-cta'>
-                <a href='https://github.com/Mardoqueu/helpdesk-front' className='btn' target='_blank'>Github</a>
-                <a href='https://helpdesk-front-tawny.vercel.app/login' className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
-
-          <article className='portfolio__item'>
-            <div className='portfolio__item-image'>
-            <img src={IMG6}></img>
-            </div>
-                <h3>Tindog</h3>
-                <div className='portfolio__item-cta'>
-                <a href='https://github.com/Mardoqueu/tindog' className='btn' target='_blank'>Github</a>
-                <a href='https://tindog-lake.vercel.app/' className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
 
       </div>
     </section>
