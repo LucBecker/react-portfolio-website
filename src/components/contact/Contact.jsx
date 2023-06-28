@@ -13,7 +13,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_c0betvg', 'template_el789n1', form.current, 'IWiD0mWlRV1j__2w9')
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
