@@ -28,7 +28,7 @@ const Contact = () => {
       <h5>Vamos conversar!</h5>
       <h2>Contato</h2>
 
-      <div className='container .contact__container'>
+      <div className='container contact__container'>
           <div className='contact__options'>
             <article className='contact__option'>
               <HiOutlineMail className='contact__option-icon'/>
