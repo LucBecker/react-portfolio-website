@@ -4,7 +4,6 @@
 
 ![image](https://github.com/LucBecker/DjangoReactPortfolio/assets/108952468/18149ba8-3651-4192-813e-1cfda0b9ae14)
 
-Design and teacher: [EGATOR](https://www.youtube.com/c/EGATORTUTORIALS).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
