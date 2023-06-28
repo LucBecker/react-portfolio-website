@@ -56,7 +56,7 @@ const data = [
   {
     id: 7, 
     image: IMG3,
-    title: 'Bookstore Backend',
+    title: 'Bookstore Backend API',
     github: 'https://github.com/LucBecker/bookstore-api',
     demo: '',
   },
@@ -70,7 +70,7 @@ const data = [
   {
     id: 9, 
     image: IMG3,
-    title: 'Help-desk Backend',
+    title: 'Help-desk Backend API',
     github: 'https://github.com/LucBecker/helpdesk-back',
     demo: 'https://tindog-lake.vercel.app/',
   },
