@@ -2,7 +2,7 @@
 
 # My portfolio
 
-![image](https://github.com/LucBecker/DjangoReactPortfolio/assets/108952468/18149ba8-3651-4192-813e-1cfda0b9ae14)
+![image](https://github.com/LucBecker/react-portfolio-website/assets/108952468/ee72ee0c-57d9-4e1d-8466-327721954228)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
